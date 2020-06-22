@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body page-name="basic-setting">
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn" onclick="myFunction()">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content modal-fixed-center">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 class="modal-header-name">Chỉnh sửa thông tin xe</h2>
+            </div>
+            <form class="modal-body">
+                <div class="form-group">
+                    <span class="Multilang form-item-lable">Mã xe</span>
+                    <input type="text" class="form-item-input">
+                </div>
+                <div class="form-group">
+                    <span class="Multilang form-item-lable">Tên xe</span>
+                    <input type="text" class="form-item-input">
+                </div>
+                <div class="form-group">
+                    <span class="Multilang form-item-lable">Biển số</span>
+                    <input type="text" class="form-item-input" value="29A-GTX-8888" disabled="disabled">
+                </div>
+
+                <div class="form-group">
+                    <span class="Multilang form-item-lable">Tên</span>
+                    <input type="text" class="form-item-input">
+                </div>
+                <div class="form-group">
+                    <span class="Multilang form-item-lable">Số điện thoại 1</span>
+                    <input type="text" class="form-item-input" value="0983635108">
+                </div>
+                <div class="form-group">
+                    <span class="Multilang form-item-lable">Số điện thoại 2</span>
+                    <input type="text" class="form-item-input" value="0983635108">
+                </div>
+                <div class="form-group">
+                    <span class="Multilang form-item-lable">Số điện thoại gắn trên thiết bị</span>
+                    <input type="text" class="form-item-input" value="0354763281" disabled>
+                </div>
+                <div class="form-group">
+                    <span class="Multilang form-item-lable">Tiêu hao năng lượng</span>
+                    <input type="text" class="form-item-input" value="0.35">
+                </div>
+                <div class="form-group">
+                    <span class="Multilang form-item-lable">Loại dầu</span>
+                    <select class="form-group-select-type">
+                        <option value="0">E5 RON 92-II</option>
+                        <option value="1">RON 95-IV</option>
+                        <option value="2">RON 95-III</option>
+                        <option value="3">Diesel 0,001S-V</option>
+                        <option value="4">Diesel 0,05S-II</option>
+                        <option value="5">Dầu hỏa</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <span class="Multilang form-item-lable">Kiểu xe</span>
+                    <select class="form-group-select-type">
+                        <option value="0">Xe bê tông</option>
+                        <option value="1">Xe bus</option>
+                        <option value="2">Xe máy</option>
+                        <option value="3">Đầu kéo</option>
+                        <option value="4">Thuyền</option>
+                        <option value="5">Container</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <span class="Multilang form-item-lable">Loại xe (Trạm thu phí)</span>
+                    <select class="form-group-select-type">
+                        <option value="0">Xe dưới 12 chỗ ngồi</option>
+                        <option value="1">Xe có trọng tải từ 4 tấn đến dưới 10 tấn</option>
+                        <option value="2">Xe Container trên 30 fit</option>
+                        <option value="3">Xe có trọng tải trên 10 tấn</option>
+                        <option value="4">Xe có trọng tải trên 10 tấn và dưới 30 tấn</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <span class="Multilang form-item-lable">Nhóm</span>
+                    <input type="text" class="form-item-input" value="123">
+                </div>
+                <div class="form-group">
+                    <span class="Multilang form-item-lable">Sức tối đa</span>
+                    <input type="text" class="form-item-input" value="0">
+                </div>
+                <div class="form-group">
+                    <span class="Multilang form-item-lable">Tải trọng tối đa</span>
+                    <input type="text" class="form-item-input" value="15">
+                </div>
+
+            </form>
+            <div class="modal-footer">
+                <button id="btn-save" class="btn-save">Lưu</button>
+                <button id="btn-cancel" class="btn-cancel" onclick="funCancel">Hủy</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
